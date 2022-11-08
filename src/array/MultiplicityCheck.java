@@ -21,6 +21,8 @@ public class MultiplicityCheck {
             for (int num : array) {
                 if (num % 3 == 0) {
                     System.out.println(num);
+                }else {
+                    System.out.println("Отсутствуют");
                 }
             }
         } catch (InputMismatchException e) {
