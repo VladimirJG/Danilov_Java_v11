@@ -9,20 +9,18 @@ public class MultiplicityCheck {
     void enterNum() {
         Locale.setDefault(Locale.US);
         Scanner input = new Scanner(System.in);
-        System.out.println("Введите размер числового массива");
+        System.out.println("Введите размер числового массива: ");
         int sizeArray = input.nextInt();
         int[] array = new int[sizeArray];
-        System.out.println("Введите элементы массива");
+        System.out.println("Введите элементы массива: ");
         try {
             for (int i = 0; i < sizeArray; i++) {
                 array[i] = (int) input.nextDouble();
             }
-            System.out.println("Введенные элементы кратные '3'");
+            System.out.println("Введенные элементы кратные '3': ");
             for (int num : array) {
                 if (num % 3 == 0) {
                     System.out.println(num);
-                }else {
-                    System.out.println("Отсутствуют");
                 }
             }
         } catch (InputMismatchException e) {
