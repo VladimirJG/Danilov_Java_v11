@@ -13,7 +13,7 @@ public class Number {
         enter(scanner.nextDouble());
     }
 
-    private static void enter(double num) {
+    static void enter(double num) {
         try {
             if (num % 1 != 0) {
                 System.out.println("Введите целое значение");

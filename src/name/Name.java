@@ -11,7 +11,7 @@ public class Name {
         enterName(scanner.nextLine());
     }
 
-    private static void enterName(String name) {
+     static void enterName(String name) {
         if (name.isEmpty()) {
             System.out.println("Необходимо ввести имя!");
         } else if (name.equalsIgnoreCase("Вячеслав")) {
